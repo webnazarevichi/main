@@ -902,8 +902,8 @@ input[type="checkbox"]{
 @media screen and (max-width: 991px){
     .promo {
         height: 100vh;
+        min-height: 400px;
         max-height: 900px;
-        width: 100%;
     }
 }
 
@@ -912,7 +912,7 @@ input[type="checkbox"]{
 @media screen and (max-width: 1200px) {
 
     .tariffs {
-        padding: 110px 0;
+        padding: 80px 0 100px;
     }
     .tariffs__title {
         font-size: 32px;
@@ -951,9 +951,6 @@ input[type="checkbox"]{
 
 @media screen and (max-width: 991px) {
 
-    .tariffs {
-        padding: 110px 0;
-    }
     .tariffs__title {
         font-size: 32px;
         max-width: 592px;
@@ -1173,6 +1170,7 @@ input[type="checkbox"]{
     }
     .stages__title {
         max-width: 420px;
+        font-size: 32px;
     }
     .stages__item {
         width: 100%;
@@ -1203,7 +1201,7 @@ input[type="checkbox"]{
         content: "";
         position: absolute;
         top: -16%;
-        right: -40%;
+        right: -50%;
         background: url(../img/arrow_2.png) center center/cover no-repeat;        
     }
     .stages__block:nth-child(2):after {
@@ -1214,7 +1212,7 @@ input[type="checkbox"]{
         height: 92px;
         content: "";
         position: absolute;
-        bottom: -25%;
+        bottom: -21%;
         right: -30%;
         background: url(../img/arrow_3.png) center center/cover no-repeat;    
     }
@@ -1297,6 +1295,9 @@ input[type="checkbox"]{
         max-width: 100%;
         padding: 0 15px;
     }
+    .stages__title{
+        font-size: 28px;
+    }
     .stages__item {
         width: 444px;
         padding-left: 102px;
@@ -1315,6 +1316,12 @@ input[type="checkbox"]{
 /*FAQ Media*/
 
 @media screen and (max-width: 1200px) { 
+    .faq{
+        padding: 80px 0 100px;
+    }
+    .faq__wrapper{
+        margin-top: 50px;
+    }
     .faq__title {
         font-size: 32px;
     }
@@ -1326,6 +1333,7 @@ input[type="checkbox"]{
 @media screen and (max-width: 991px) { 
     .faq__title {
         font-size: 32px;
+        line-height: 150%;
     }
     .faq__item_title {
         font-size: 20px;
@@ -1338,7 +1346,8 @@ input[type="checkbox"]{
 
 @media screen and (max-width: 767px){
     .faq__wrapper{
-        margin-top: 40px;
+        margin-top: 30px;
+        padding: 0 4%;
     } 
     .faq__title {
         font-size: 28px;
@@ -1426,8 +1435,17 @@ input[type="checkbox"]{
         order: 0;
         margin: 0 auto 22px;
     }
+    .contact__form_label {
+        font-size: 13px;
+    }
     .btn__contact{
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact__title{
+        font-size: 28px;
     }
 }
 
@@ -1441,9 +1459,10 @@ input[type="checkbox"]{
     }
     .footer__wrapper {
         display: flex;
+        justify-content: space-between;
     }
     .footer__item {
-        margin-right: 40px;
+        margin-right: 0;
     }
 }
 
