@@ -705,8 +705,8 @@ input[type="checkbox"]{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 76px;
-    height: 89px;
+    width: 81px;
+    height: 81px;
     background: url(../img/contact_logo1.svg) center center/cover no-repeat;
 }
 
@@ -810,7 +810,7 @@ input[type="checkbox"]{
 }
 .footer__copyright {
     margin: 0 auto;
-    width: 340px;
+    max-width: 340px;
     font-family: 'PT Serif', serif;
     font-style: normal;
     font-weight: 400;
@@ -907,6 +907,60 @@ input[type="checkbox"]{
     }
 }
 
+@media screen and (max-width: 575px){
+
+    .title {
+        width: 300px;
+    }
+    .point {
+        right:12px;
+    } 
+
+
+    .promo__title {
+        font-size: 50px;
+        line-height: 150%;
+        min-width: 240px;
+        padding-left: 17px;
+
+    }
+
+    @keyframes popIn {
+      0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+      }
+      50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+      }
+       65% {
+          width: 7px;
+          height: 7px;
+          bottom: 0px;
+          width: 15px
+       }
+       80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px
+       }
+      100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 17px;
+      }
+    }
+}
+
 /*Section Tariffs*/
 
 @media screen and (max-width: 1200px) {
@@ -996,6 +1050,7 @@ input[type="checkbox"]{
     }
     .tariffs__title {
         font-size: 28px;
+        line-height: 150%;
         max-width: 592px;
     }
     .tariffs__item {
@@ -1007,6 +1062,42 @@ input[type="checkbox"]{
     }
     .tariffs__tariff {
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .tariffs {
+        padding: 80px 0;
+    }
+    .tariffs__title {
+        font-size: 24px;
+        line-height: 150%;
+        max-width: 450px;
+    }
+    .tariffs__wrapper {
+        margin-top: 40px;
+    }
+    .tariffs__item {
+        width: 100%;
+        max-width: 400px;
+    }
+    .tariffs__item ul{
+        max-width: 425px;
+        width: 90%;
+        padding-left: 35px;
+    }
+    .tariffs__tariff {
+        width: 100%;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .tariffs__point{
+        font-size: 17px;
+        line-height: 150%;
+    }
+    .tariffs__price {
+        font-size: 25px;
     }
 }
 
@@ -1313,6 +1404,41 @@ input[type="checkbox"]{
     }
 }
 
+@media screen and (max-width: 575px) {
+    .stages__title{
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .stages__wrapper {
+        margin-top: 40px;
+    }
+    .stages__item {
+        width: 100%;
+        min-width: 294px;
+        height: auto;
+        padding: 35px 20px 35px 55px;
+    }
+    .stages__item_title {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .stages__item_descr{
+            font-size: 16px;
+            max-width: 278px;
+    }
+    .stages__block:nth-child(1):after, .stages__block:nth-child(2):after, .stages__block:nth-child(3):after  {
+        display: none  
+    }
+    .stages__circle {
+        width: 40px;
+        height: 80px;
+        padding-right: 16px;
+        font-size: 27px;
+        line-height: 150%;
+
+    }
+}
+
 /*FAQ Media*/
 
 @media screen and (max-width: 1200px) { 
@@ -1360,6 +1486,29 @@ input[type="checkbox"]{
     }
     .faq__item_title:before {
         right: -41px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .faq__wrapper{
+        margin-top: 0;
+        padding: 0 4%;
+    } 
+    .faq__title {
+        font-size: 24px;
+        line-height: 150%;
+    }.faq__item{
+        max-width: 100%;
+    }
+    .faq__item_title {
+        font-size: 18px;
+        max-width: 92%;
+    }
+    .faq__item_title:before {
+        right: -10%;
+    }
+    .faq__item_text{
+        font-size: 17px;
     }
 }
 
@@ -1449,6 +1598,84 @@ input[type="checkbox"]{
     }
 }
 
+@media screen and (max-width: 575px) {
+    .contact {
+        padding-bottom: 90px;
+    }
+    .contact__title {
+        font-size: 22px;
+        line-height: 150%;
+        max-width: 430px;
+    }
+    .contact__subtitle {
+        font-size: 18px;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 292px;
+    }
+    .contact__wrapper {
+        display: flex;
+        margin-top: 22px;
+        padding: 10px 10% 0 10%;
+        width: auto;
+    }
+    .contact__wrapper form {
+        width: 100%;
+        max-width: 355px;
+
+    }
+    .contact__form {
+        padding: 60px 0 0;
+        width: 100%;
+    }
+    .contact__form > div{
+        margin-bottom: 22px;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+    input[type="checkbox"]{
+        width: 22px;
+        height: 22px;
+        border: 1px solid #828282;
+        box-sizing: border-box;
+    }
+    .contact__form_check {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        height: 59px;
+    }
+    .contact__form_label{
+        position: absolute;
+        top: 0;
+        left: 33px;
+        transform: translateY(0%);
+    }
+    .contact__bg img{
+        width: 100%
+    }
+
+    .contact__animated{
+        width: 214px;
+        height: 214px;
+    }
+    .contact__text{
+        width: 214px;
+        height: 214px;
+    }
+
+    .contact__text span {
+        font-size: 15px;
+        transform-origin: 0 107px;
+
+    }
+    .contact__logo{
+        width: 71px;
+        height: 71px;
+    }
+}
+
 
 
 /*Footer Media*/
@@ -1512,112 +1739,4 @@ input[type="checkbox"]{
 
 
 
-
-    /*.footer {
-    .footer__item {
-        margin-right: 80px;
-    }
-    .footer__item:nth-last-child(1) {
-        margin-right: 0;
-    }
-    .footer__general_menu li {
-        margin-bottom: 16px;
-    }
-    .footer__general_menu a{
-        font-family: 'Karla', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-    }
-    .footer__services_title {
-        font-family: 'Karla', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        margin-bottom: 8px;
-    }
-    .footer__services {
-       min-width: 178px; 
-    }
-    .footer__services a {
-        font-family: 'Karla', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        color: #FFFFFF;
-        
-    }
-    .footer__services li{
-        margin-bottom: 16px;
-    }
-    .footer__contact {
-        font-family: 'Karla', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        margin-bottom: 8px;
-    }
-    .footer__phone {
-        font-family: 'PT Serif', serif;
-        display: block;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        color: #FFFFFF;
-        margin-bottom: 16px;
-    }
-    .footer__email {
-        font-family: 'PT Serif', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        color: #FFFFFF;
-    }
-    .footer__social_title {
-        font-family: 'Karla', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        margin-bottom: 8px;
-    }
-    .footer__social_wrapper {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .footer__social:nth-child(1) {
-        margin-right: 22px;
-    }
-    .footer hr {
-        width: 100%;
-        height: 1px;
-        background: #ffffff;
-        margin: 27px 0;
-    }
-    .footer__copyright {
-        margin: 0 auto;
-        width: 340px;
-        font-family: 'PT Serif', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        color: #FFFFFF;
-    }
-    .footer__copyright span {
-        font-family: 'PT Serif', serif;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
-    }*/
 }
