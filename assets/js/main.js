@@ -1,14 +1,5 @@
 $( document ).ready(function() {
 	
-    if ($(window).width() > 2500) {
- 
-        $('body').css("transform","scale(1.4)");
-     
-    } else {
-     
-        $('body').css("transform","scale(1)");
-     
-    }
 
     //Dropdown Menu
     $('.dropdown').on('click', function(){
